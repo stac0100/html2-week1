@@ -64,6 +64,14 @@ body {
     background-color: blanchedalmond;
 }
 
+/* the class clearfix will be used anytime we want an element to see the height of
+floated things inside it */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
 #reallyBig {
     font-size: 48px;
 }
@@ -81,6 +89,12 @@ main {
     margin: 10px;
     padding: 15px;
     border: 2px solid black;
+}
+
+main img{
+    width:30%;
+    float: left; /* text wraps around floated images */
+    margin-right: 10px;
 }
 
 /* add some padding to the footer so we can play with a background image */
