@@ -83,3 +83,14 @@ main {
     border: 2px solid black;
 }
 
+/* add some padding to the footer so we can play with a background image */
+footer {
+    padding: 40px 10px; /* 40px top-bottom, 10px left-right */
+    background-image: url(../images/bckgrndimg.jpeg); /* ../ means go up one folder */
+    background-repeat: no-repeat;
+    /* background-size: contain; contains makes the entire background image visible inside the element */
+    background-size: cover; /* ensures the background image always covers the whole element */
+    background-position: 70%; /* two values will be horizontal position and vertical position */
+    /* background position can have top, bottom, left, right , center, or a fixed value */
+    color: white;
+}
